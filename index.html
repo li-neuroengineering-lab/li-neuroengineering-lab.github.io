@@ -3,8 +3,29 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | Li Lab</title>
-  <meta name="description" content="Li Lab at the University of North Texas studies biomarkers and prevention strategies for epileptogenesis using electrophysiology, neuroimaging, network science, and photobiomodulation.">
+  <meta name="description" content="Li Lab at the University of North Texas develops neuroengineering approaches for epileptogenesis biomarkers, photobiomodulation, neuroimaging, electrophysiology, and computational neuroscience.">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .home-section{padding:58px 0}
+    .focus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .focus-card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 10px 24px rgba(23,32,51,.05);display:flex;flex-direction:column;min-height:245px}
+    .focus-card h3{margin:6px 0 10px;font-size:20px;line-height:1.18}
+    .focus-card p{color:var(--muted);margin:0 0 14px;font-size:14px}
+    .focus-card a{margin-top:auto;font-weight:900}
+    .platform-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .platform{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 10px 24px rgba(23,32,51,.05)}
+    .platform img{width:100%;height:178px;object-fit:cover;display:block}
+    .platform div{padding:16px}
+    .platform h3{font-size:18px;line-height:1.2;margin:0 0 8px}
+    .platform p{font-size:13px;color:var(--muted);margin:0}
+    .collab-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .collab{background:white;border:1px solid var(--line);border-radius:20px;padding:20px}
+    .collab h3{margin:0 0 10px;font-size:18px}
+    .collab p{margin:0 0 10px;color:var(--muted);font-size:13px}
+    .collab a{display:block;font-weight:800;font-size:13px;margin:7px 0}
+    @media (max-width:1020px){.focus-grid,.platform-grid,.collab-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.focus-grid,.platform-grid,.collab-grid{grid-template-columns:1fr}.hero-card{display:none}}
+  </style>
 </head>
 <body>
 <header class="topbar">
@@ -25,35 +46,54 @@
       <h1>Detecting epileptogenesis before chronic epilepsy emerges.</h1>
       <p class="lead">The Li Lab develops multimodal biomarkers and neuromodulation strategies for epilepsy and related neurological disorders, combining electrophysiology, neuroimaging, network science, and photobiomodulation.</p>
       <div class="cta-row"><a class="btn primary" href="research.html">Explore research</a><a class="btn secondary" href="people.html">Meet the team</a></div>
-      <div class="stats"><div class="stat"><b>pHFO</b><span>Network biomarkers</span></div><div class="stat"><b>PBM</b><span>Prevention strategies</span></div><div class="stat"><b>MEA · LFP · fMRI</b><span>Multimodal platforms</span></div></div>
+      <div class="stats"><div class="stat"><b>HFOs</b><span>Electrophysiological biomarkers</span></div><div class="stat"><b>PBM</b><span>Prevention-oriented intervention</span></div><div class="stat"><b>Networks</b><span>Imaging and computation</span></div></div>
     </div>
-    <div class="hero-card"><img src="assets/img/laser-speckle-lab-1.jpg" alt="Li Lab experimental setup"><div class="caption">Experimental platforms include intracranial electrophysiology, ex-vivo MEA recording, laser speckle imaging, and preclinical models of epileptogenesis.</div></div>
+    <div class="hero-card"><img src="assets/img/phfo-network.png" alt="pHFO network analysis representing Li Lab research"><div class="caption">The lab studies pathological high-frequency oscillations, brain network reorganization, and multimodal biomarkers of epileptogenesis.</div></div>
   </div>
 </section>
-<section class="section">
-  <div class="container section-title"><h2>Research focus</h2><p>Our core question is practical: can we identify high-risk epileptogenic networks early enough to intervene?</p></div>
-  <div class="container cards">
-    <article class="card"><span class="tag">Project 1</span><h3>Biomarkers of epilepsy</h3><p>We study pathological high-frequency oscillations and pHFO-derived network features as candidate biomarkers of epileptogenesis.</p><a href="research.html#phfo">Read more →</a></article>
-    <article class="card"><span class="tag">Project 2</span><h3>Epilepsy prevention</h3><p>We test photobiomodulation as a candidate antiepileptogenesis strategy using in vitro and in vivo preclinical models.</p><a href="research.html#pbm">Read more →</a></article>
-    <article class="card"><span class="tag">Platform</span><h3>Multimodal neuroengineering</h3><p>Our work integrates MEA, penetrating microelectrodes, LFPs, imaging, computational modeling, and graph-theoretical analysis.</p><a href="research.html#platforms">Read more →</a></article>
+
+<section class="home-section">
+  <div class="container section-title"><h2>Research focus</h2><p>Our work asks how pathological brain networks emerge, how they disrupt cognition, and how prevention-oriented interventions can be tested before chronic disease becomes established.</p></div>
+  <div class="container focus-grid">
+    <article class="focus-card"><span class="tag">PBM</span><h3>Non-invasive photobiomodulation</h3><p>Testing repeated light-based neuromodulation to suppress spikes, seizures, HFOs, and cognitive decline in epilepsy and Alzheimer's disease models.</p><a href="research.html#pbm">Read more →</a></article>
+    <article class="focus-card"><span class="tag">Biomarkers</span><h3>Electrophysiological and imaging biomarkers</h3><p>Combining chronic recordings, fMRI/MRI, high-frequency oscillations, and graph analysis to identify early markers of epileptogenesis.</p><a href="research.html#biomarkers">Read more →</a></article>
+    <article class="focus-card"><span class="tag">Circuits</span><h3>Cognitive deficits in epilepsy and AD</h3><p>Studying how spike-ripple events and epileptiform activity disrupt hippocampal-prefrontal communication and memory consolidation.</p><a href="research.html#cognition">Read more →</a></article>
+    <article class="focus-card"><span class="tag">Methods</span><h3>Computational neuroscience methods</h3><p>Developing statistical, signal-processing, optical imaging, and network-science tools for reproducible multimodal neuroscience.</p><a href="research.html#methods">Read more →</a></article>
   </div>
 </section>
-<section class="section" style="padding-top:20px">
-  <div class="container section-title"><h2>Lab platforms</h2><p>Selected facility and equipment images from the current lab materials.</p></div>
-  <div class="container gallery">
-    <figure><img src="assets/img/mea-system.jpg" alt="MEA system"><figcaption>Ex-vivo MEA system</figcaption></figure>
-    <figure><img src="assets/img/vibratome.jpg" alt="Vibratome"><figcaption>Vibratome sectioning</figcaption></figure>
-    <figure><img src="assets/img/tbi-device.jpg" alt="TBI device"><figcaption>TBI device</figcaption></figure>
-    <figure><img src="assets/img/laser-speckle-system.png" alt="Laser speckle imaging"><figcaption>RFLSI III laser speckle imaging</figcaption></figure>
+
+<section class="home-section" style="padding-top:20px">
+  <div class="container section-title"><h2>Core platforms</h2><p>The lab integrates experimental and computational platforms that connect cellular-scale signals with brain-wide network dynamics.</p></div>
+  <div class="container platform-grid">
+    <article class="platform"><img src="assets/img/mea-system.jpg" alt="Multi-electrode array electrophysiology system"><div><h3>Electrophysiology</h3><p>MEA, local field potentials, penetrating microelectrodes, spike-ripple detection, and chronic neural recordings.</p></div></article>
+    <article class="platform"><img src="assets/img/pbm-timeline.png" alt="Photobiomodulation timeline"><div><h3>Neuromodulation</h3><p>Transcranial photobiomodulation protocols for prevention-oriented studies in epilepsy and neurodegeneration.</p></div></article>
+    <article class="platform"><img src="assets/img/laser-speckle-system.png" alt="Laser speckle neuroimaging system"><div><h3>Neuroimaging</h3><p>Laser speckle imaging, MRI/fMRI-informed analysis, hemodynamic imaging, and multimodal readouts.</p></div></article>
+    <article class="platform"><img src="assets/img/phfo-network.png" alt="Computational brain network analysis"><div><h3>Computational neuroscience</h3><p>Graph theory, automated event detection, biomarker modeling, and electrophysiology-imaging integration.</p></div></article>
+  </div>
+  <div class="container gallery" style="margin-top:16px">
+    <figure><img src="assets/img/animal-lab-1.png" alt="Preclinical laboratory setup"><figcaption>Preclinical models and animal lab platform</figcaption></figure>
+    <figure><img src="assets/img/vibratome.jpg" alt="Vibratome"><figcaption>Brain slice preparation</figcaption></figure>
+    <figure><img src="assets/img/tbi-device.jpg" alt="TBI device"><figcaption>Traumatic brain injury model</figcaption></figure>
+    <figure><img src="assets/img/lab-computer-1.jpg" alt="Computational workstation"><figcaption>Computational analysis workspace</figcaption></figure>
+  </div>
+</section>
+
+<section class="home-section" style="padding-top:22px">
+  <div class="container section-title"><h2>Collaborators</h2><p>The Li Lab works with epilepsy, neurotrauma, pediatric neurology, brain organoid, synthetic biology, and optical neuroimaging collaborators across institutions.</p></div>
+  <div class="container collab-grid">
+    <article class="collab"><h3>UCLA epilepsy and neurotrauma</h3><p>Long-standing collaborations and mentorship in epilepsy biomarkers, post-traumatic epilepsy, and translational systems neuroscience.</p><a href="https://neilharrislab.dgsom.ucla.edu/">Neil Harris Lab</a><a href="https://labs.dgsom.ucla.edu/nerl/pages/">UCLA Laboratory for Epilepsy Research</a><a href="https://profiles.ucla.edu/richard.staba">Richard Staba</a><a href="https://profiles.ucla.edu/jerome.engel">Jerome Engel</a></article>
+    <article class="collab"><h3>UNT Biomedical Engineering</h3><p>Local collaborations in synthetic biology, brain organoids, neurodevelopmental models, and engineering approaches to disease mechanisms.</p><a href="https://engineering.unt.edu/bmen/">UNT Biomedical Engineering</a><a href="https://doi.org/10.1016/j.isci.2025.113027">Synthetic probiotics collaboration</a><a href="https://doi.org/10.64898/2026.03.15.711882">Brain organoid collaboration</a></article>
+    <article class="collab"><h3>Clinical epilepsy partners</h3><p>Clinical collaborations connect lab biomarkers and neuromodulation questions with pediatric epilepsy, EEG, and translational patient-focused expertise.</p><a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49253">Joyce Y. Wu</a><a href="https://utswmed.org/doctors/charuta-joshi/">Charuta Joshi</a></article>
+    <article class="collab"><h3>Optical neuroimaging community</h3><p>Foundational training and continuing intellectual connections in fNIRS, diffuse optical tomography, and quantitative optical brain imaging.</p><a href="https://www.uta.edu/academics/faculty/profile?user=hanli">Hanli Liu</a><a href="https://doi.org/10.1002/hbm.22459">Atlas-guided DOT</a><a href="https://doi.org/10.1117/1.jbo.20.5.050801">Reliability methods</a></article>
   </div>
 </section>
 </main>
 
 <footer class="footer">
   <div class="container footer-grid">
-    <div><b>Li Lab</b><p>Department of Biomedical Engineering, University of North Texas.</p><p class="small">Static website starter generated from the supplied lab materials. Replace placeholders before public launch.</p></div>
+    <div><b>Li Lab</b><p>Department of Biomedical Engineering, University of North Texas.</p><p class="small">Research in epileptogenesis, neuroengineering, photobiomodulation, electrophysiology, imaging, and computational neuroscience.</p></div>
     <div><b>Location</b><p>Discovery Park K240<br>Denton, Texas</p></div>
-    <div><b>Contact</b><p><a href="mailto:Lin.Li@unt.edu">Lin.Li@unt.edu</a></p><p><a href="https://scholar.google.com/citations?user=UkpTndkAAAAJ&hl=en">Google Scholar</a></p></div>
+    <div><b>Contact</b><p><a href="mailto:Lin.Li@unt.edu">Lin.Li@unt.edu</a></p><p><a href="publications.html">Publications</a></p></div>
   </div>
 </footer>
 <script src="assets/js/main.js"></script>
