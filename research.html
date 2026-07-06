@@ -3,8 +3,36 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Li Lab</title>
-  <meta name="description" content="Li Lab at the University of North Texas studies biomarkers and prevention strategies for epileptogenesis using electrophysiology, neuroimaging, network science, and photobiomodulation.">
+  <meta name="description" content="Research in the Li Lab at the University of North Texas: photobiomodulation, biomarkers of epileptogenesis, cognitive deficits in epilepsy and Alzheimer's disease, and computational neuroscience methods.">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .research-hero{padding:54px 0 32px;background:linear-gradient(135deg,#fff 0%,#f2f5fa 100%);border-bottom:1px solid var(--line)}
+    .research-hero h1{font-size:clamp(34px,4vw,54px);max-width:940px}
+    .research-hero .lead{max-width:920px}
+    .research-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+    .research-nav a{border:1px solid var(--line);background:white;border-radius:999px;padding:9px 13px;font-weight:800;font-size:13px;color:var(--brand)}
+    .research-section{min-height:calc(100vh - 90px);display:grid;align-items:center;padding:44px 0;border-bottom:1px solid var(--line)}
+    .research-card{background:white;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 30px rgba(23,32,51,.06);padding:28px}
+    .research-layout{display:grid;grid-template-columns:1.02fr .98fr;gap:28px;align-items:center}
+    .research-kicker{color:var(--accent);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:8px}
+    .research-card h2{font-size:clamp(26px,3vw,38px);line-height:1.08;margin:0 0 14px;letter-spacing:-.03em}
+    .research-card p{color:#3b465a;margin:0 0 14px}
+    .figure-stack{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .figure-stack figure{margin:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+    .figure-stack img{width:100%;height:190px;object-fit:cover;display:block}
+    .figure-stack figcaption{font-size:12px;color:var(--muted);font-weight:700;padding:9px 10px}
+    .single-figure img{height:330px}
+    .research-points{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+    .research-point{border:1px solid var(--line);border-radius:16px;padding:12px;background:#f8fafc}
+    .research-point b{display:block;color:var(--brand);font-size:13px;margin-bottom:4px}
+    .research-point span{display:block;color:var(--muted);font-size:12px;line-height:1.4}
+    .citation-list{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
+    .citation-list h3{font-size:14px;margin:0 0 8px;color:var(--ink)}
+    .citation-list p{font-size:13px;color:var(--muted);margin:6px 0;line-height:1.45}
+    .citation-list a{font-weight:800}
+    @media (max-width:920px){.research-section{min-height:auto}.research-layout{grid-template-columns:1fr}.single-figure img{height:240px}.research-points{grid-template-columns:1fr}.figure-stack img{height:160px}}
+    @media (max-width:560px){.research-card{padding:20px}.figure-stack{grid-template-columns:1fr}.figure-stack img{height:190px}}
+  </style>
 </head>
 <body>
 <header class="topbar">
@@ -17,20 +45,146 @@
   </div>
 </header>
 
-<main class="section"><div class="container">
-  <div class="section-title"><h2>Research</h2><p>Epileptogenesis is the sequence of events that converts a normal neuronal network into a hyperexcitable network with increased seizure susceptibility.</p></div>
-  <div class="split">
-    <section class="panel" id="phfo"><h2>Project 1 · Biomarkers of epilepsy</h2><img src="assets/img/phfo-waveform.png" alt="pHFO waveform" style="width:100%;border-radius:18px;margin:8px 0 18px"><p>Pathological high-frequency oscillations are transient fast oscillations observed in local field potentials near seizure-generating regions. We analyze ripples and fast ripples, compute pHFO-based networks, and evaluate global and local network properties as predictors of epileptogenesis.</p><ul class="list"><li>Intrahippocampal kainic acid model of mesial temporal lobe epilepsy.</li><li>Grid electrodes and silicon probes for local field potential recording.</li><li>Graph-theoretical analysis and machine-learning prediction.</li><li>Collaborations with UCLA epilepsy researchers.</li></ul></section>
-    <section class="panel" id="pbm"><h2>Project 2 · Epilepsy prevention</h2><img src="assets/img/pbm-timeline.png" alt="PBM timeline" style="width:100%;border-radius:18px;margin:8px 0 18px"><p>We study photobiomodulation as a candidate antiepileptogenesis therapy, measuring neural activity and intracellular responses in brain slices and preclinical epilepsy models.</p><ul class="list"><li>CCO and ROS measurement with immunohistochemistry and immunofluorescence.</li><li>MEA recording of spikes and LFPs during baseline and acute seizure models.</li><li>Testing selected wavelengths for reducing epileptiform discharges, pHFOs, and seizure severity.</li></ul></section>
-  </div>
-  <section class="panel" id="platforms" style="margin-top:26px"><h2>Experimental and computational platforms</h2><div class="gallery"><figure><img src="assets/img/phfo-network.png" alt="Network analysis"><figcaption>pHFO network analysis</figcaption></figure><figure><img src="assets/img/laser-speckle-lab-2.jpg" alt="Laser speckle lab"><figcaption>Brain hemodynamic imaging</figcaption></figure><figure><img src="assets/img/animal-lab-1.png" alt="Animal lab"><figcaption>Animal lab setup</figcaption></figure><figure><img src="assets/img/lab-computer-1.jpg" alt="Computer lab"><figcaption>Computer lab and office</figcaption></figure></div></section>
-</div></main>
+<main>
+  <section class="research-hero">
+    <div class="container">
+      <div class="eyebrow">Li Lab Research</div>
+      <h1>Preventing neurological disease progression through biomarkers, circuits, and neuroengineering interventions.</h1>
+      <p class="lead">Our work combines chronic electrophysiology, optical and MR imaging, graph theory, automated event detection, and non-invasive photobiomodulation to understand and prevent epileptogenesis, cognitive decline, and related neurological dysfunction.</p>
+      <div class="research-nav">
+        <a href="#pbm">Photobiomodulation</a>
+        <a href="#biomarkers">Epileptogenesis biomarkers</a>
+        <a href="#cognition">Cognitive deficits</a>
+        <a href="#methods">Computational methods</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-section" id="pbm"><div class="container">
+    <article class="research-card research-layout">
+      <div>
+        <div class="research-kicker">Contribution 1</div>
+        <h2>Non-invasive photobiomodulation for prevention-oriented neurology.</h2>
+        <p>The lab develops repetitive transcranial photobiomodulation (PBM) protocols to test whether light-based, non-invasive stimulation can reduce pathological activity before chronic disease progression is established.</p>
+        <p>Across epilepsy and Alzheimer's disease models with epileptiform activity, this work measures short-term electrophysiological endpoints, including interictal spikes, seizures, spike-ripple events, and high-frequency oscillations, alongside longer-term memory and disease-progression outcomes.</p>
+        <div class="research-points">
+          <div class="research-point"><b>Intervention</b><span>Repeated wavelength- and site-specific PBM protocols.</span></div>
+          <div class="research-point"><b>Readouts</b><span>Spikes, seizures, HFOs, memory, and network activity.</span></div>
+          <div class="research-point"><b>Models</b><span>mTLE, post-traumatic epilepsy, and AD-related epileptiform activity.</span></div>
+        </div>
+        <div class="citation-list">
+          <h3>Representative publications</h3>
+          <p>You et al. Preventive effects of transcranial photobiomodulation on epileptogenesis in a kainic acid-induced rat epilepsy model. <a href="https://doi.org/10.1016/j.expneurol.2024.115005">Experimental Neurology, 2025</a>.</p>
+          <p>Kang et al. Site- and EEG-frequency-specific effects of 800-nm prefrontal PBM on EEG global network topology. <a href="https://doi.org/10.1117/1.nph.12.1.015011">Neurophotonics, 2025</a>.</p>
+          <p>Wang et al. Photobiomodulation as a potential treatment for Alzheimer's disease. <a href="https://doi.org/10.3390/brainsci14111064">Brain Sciences, 2024</a>.</p>
+          <p>You et al. Preclinical studies of transcranial photobiomodulation in neurological diseases. <a href="https://doi.org/10.1002/tbio.202000024">Translational Biophotonics, 2020</a>.</p>
+        </div>
+      </div>
+      <div class="figure-stack">
+        <figure><img src="assets/img/pbm-timeline.png" alt="Photobiomodulation experimental timeline"><figcaption>PBM treatment and recording timeline</figcaption></figure>
+        <figure><img src="assets/img/pbm-slice-data.jpg" alt="Brain slice electrophysiology data"><figcaption>Slice and electrophysiology readouts</figcaption></figure>
+      </div>
+    </article>
+  </div></section>
+
+  <section class="research-section" id="biomarkers"><div class="container">
+    <article class="research-card research-layout">
+      <div class="figure-stack">
+        <figure><img src="assets/img/phfo-network.png" alt="pHFO network analysis"><figcaption>pHFO-based network analysis</figcaption></figure>
+        <figure><img src="assets/img/epileptogenesis-timeline.png" alt="Epileptogenesis timeline"><figcaption>Latent-period epileptogenesis timeline</figcaption></figure>
+        <figure><img src="assets/img/phfo-waveform.png" alt="High-frequency oscillation waveform"><figcaption>High-frequency oscillation features</figcaption></figure>
+        <figure><img src="assets/img/phfo-voltage-depth.png" alt="Voltage depth profile"><figcaption>Depth and spatial profiles</figcaption></figure>
+      </div>
+      <div>
+        <div class="research-kicker">Contribution 2</div>
+        <h2>Electrophysiological and imaging biomarkers of epileptogenesis.</h2>
+        <p>Since 2015, the lab has studied preclinical post-traumatic epilepsy and mesial temporal lobe epilepsy using chronic neural recordings, MRI/fMRI, and network analysis to identify biomarkers that emerge before chronic epilepsy is fully expressed.</p>
+        <p>A central finding is that pathological high-frequency oscillations and functional network reorganization can extend beyond the primary lesion site, suggesting organized extrahippocampal network elements that contribute to epileptogenic remodeling.</p>
+        <div class="research-points">
+          <div class="research-point"><b>Models</b><span>Fluid percussion injury PTE and intrahippocampal kainic acid mTLE.</span></div>
+          <div class="research-point"><b>Signals</b><span>HFOs, fast ripples, LFPs, fMRI connectivity, and graph metrics.</span></div>
+          <div class="research-point"><b>Goal</b><span>Early biomarkers and mechanistically grounded prevention targets.</span></div>
+        </div>
+        <div class="citation-list">
+          <h3>Representative publications</h3>
+          <p>Kriukova et al. High-frequency oscillations after acute hemorrhagic traumatic brain injury. <a href="https://doi.org/10.1002/epi.70235">Epilepsia, 2026</a>.</p>
+          <p>Jafari et al. Etiology-specific trajectories of longitudinal functional connectivity and network topology. <a href="https://doi.org/10.1016/j.expneurol.2026.115861">Experimental Neurology, 2026</a>.</p>
+          <p>Jafari et al. Intrinsic brain network stability during kainic acid-induced epileptogenesis. <a href="https://doi.org/10.1002/epi4.70002">Epilepsia Open, 2025</a>.</p>
+          <p>Li et al. Spatial and temporal profile of high-frequency oscillations in posttraumatic epileptogenesis. <a href="https://doi.org/10.1016/j.nbd.2021.105544">Neurobiology of Disease, 2021</a>.</p>
+          <p>Li et al. Topographical reorganization of brain functional connectivity during early epileptogenesis. <a href="https://doi.org/10.1111/epi.16863">Epilepsia, 2021</a>.</p>
+          <p>Li et al. Extrahippocampal high-frequency oscillations during epileptogenesis. <a href="https://doi.org/10.1111/epi.14041">Epilepsia, 2018</a>.</p>
+        </div>
+      </div>
+    </article>
+  </div></section>
+
+  <section class="research-section" id="cognition"><div class="container">
+    <article class="research-card research-layout">
+      <div>
+        <div class="research-kicker">Contribution 3</div>
+        <h2>Neural mechanisms of cognitive deficits in epilepsy and Alzheimer's disease with comorbid epilepsy.</h2>
+        <p>The lab investigates how epileptiform discharges disrupt hippocampal-prefrontal circuits that support sleep-dependent memory consolidation. A particular focus is spike-ripple activity: pathological events that may interfere with physiological consolidation-related rhythms.</p>
+        <p>Using multi-electrode arrays, chronic brain-wide recordings, and automated event detection, we quantify how the burden of pathological activity covaries with memory impairment and dementia-related progression in epilepsy and Alzheimer's disease models.</p>
+        <div class="research-points">
+          <div class="research-point"><b>Circuit focus</b><span>Hippocampal-prefrontal communication and consolidation rhythms.</span></div>
+          <div class="research-point"><b>Pathology</b><span>Spike-ripple events, epileptiform discharges, and rhythm disruption.</span></div>
+          <div class="research-point"><b>Outcome</b><span>Memory impairment and cognitive decline across disease models.</span></div>
+        </div>
+        <div class="citation-list">
+          <h3>Representative publications</h3>
+          <p>Tao et al. Disruption of electrophysiological rhythms and memory impairment in an Alzheimer's transgenic rat model. <a href="https://doi.org/10.1186/s13195-025-01841-4">Alzheimer's Research &amp; Therapy, 2025</a>.</p>
+          <p>Zhou et al. An approach for reliably identifying high-frequency oscillations and reducing false-positive detections. <a href="https://doi.org/10.1002/epi4.12647">Epilepsia Open, 2022</a>.</p>
+          <p>Kumar et al. Spike and wave discharges and fast ripples during posttraumatic epileptogenesis. <a href="https://doi.org/10.1111/epi.16958">Epilepsia, 2021</a>.</p>
+          <p>Bragin et al. DOWN state in the anterior cingulate and prelimbic areas in rats during immobility. <a href="https://doi.org/10.1101/847913">bioRxiv, 2019</a>.</p>
+          <p>Li et al. Unit firing and oscillations at seizure onset in epileptic rodents. <a href="https://doi.org/10.1016/j.nbd.2019.03.027">Neurobiology of Disease, 2019</a>.</p>
+        </div>
+      </div>
+      <div class="figure-stack">
+        <figure><img src="assets/img/mea-system.jpg" alt="Multi-electrode array system"><figcaption>Multi-electrode array recordings</figcaption></figure>
+        <figure><img src="assets/img/animal-lab-2.png" alt="Preclinical recording setup"><figcaption>Preclinical neural recording platform</figcaption></figure>
+        <figure><img src="assets/img/lab-computer-2.jpg" alt="Computational analysis workstation"><figcaption>Large-scale signal analysis</figcaption></figure>
+        <figure><img src="assets/img/phfo-waveform.png" alt="Spike-ripple and HFO waveform analysis"><figcaption>Automated event detection</figcaption></figure>
+      </div>
+    </article>
+  </div></section>
+
+  <section class="research-section" id="methods"><div class="container">
+    <article class="research-card research-layout">
+      <div class="figure-stack">
+        <figure><img src="assets/img/laser-speckle-system.png" alt="Laser speckle imaging system"><figcaption>Optical imaging systems</figcaption></figure>
+        <figure><img src="assets/img/laser-speckle-lab-2.jpg" alt="Laser speckle imaging lab setup"><figcaption>Brain hemodynamic imaging</figcaption></figure>
+        <figure><img src="assets/img/lab-computer-1.jpg" alt="Computational neuroscience analysis setup"><figcaption>Computational analysis workflows</figcaption></figure>
+        <figure><img src="assets/img/laser-speckle-lab-4.jpg" alt="Laboratory optical imaging equipment"><figcaption>Multimodal neuroengineering platform</figcaption></figure>
+      </div>
+      <div>
+        <div class="research-kicker">Contribution 4</div>
+        <h2>Computational and statistical methods for neuroscience.</h2>
+        <p>Early work from the lab developed quantitative methods to improve reliability, image reconstruction, voxel classification, and interpretation in functional optical brain imaging. These methods enabled graph-theoretical analyses of brain networks and stronger study design for brain-behavior research.</p>
+        <p>This methodological foundation supports the lab's current multimodal integration across electrophysiology, MRI/fMRI, diffuse optical tomography, laser speckle imaging, and computational network science.</p>
+        <div class="research-points">
+          <div class="research-point"><b>Statistics</b><span>Reliability, reproducibility, and subgroup discovery methods.</span></div>
+          <div class="research-point"><b>Imaging</b><span>Atlas-guided DOT, voxel classification, and optical neuroimaging.</span></div>
+          <div class="research-point"><b>Integration</b><span>Graph theory and multimodal electrophysiology-imaging pipelines.</span></div>
+        </div>
+        <div class="citation-list">
+          <h3>Representative publications</h3>
+          <p>Choi et al. Recursive partitioning for subgroup identification in brain-behaviour correlation analysis. <a href="https://doi.org/10.1007/s10044-018-00775-y">Pattern Analysis and Applications, 2020</a>.</p>
+          <p>Li et al. Whole-cortical graphical networks at wakeful rest revealed by fNIRS. <a href="https://doi.org/10.1117/1.nph.5.3.035004">Neurophotonics, 2018</a>.</p>
+          <p>Li et al. Automated voxel classification with atlas-guided diffuse optical tomography. <a href="https://doi.org/10.1117/1.nph.3.4.045002">Neurophotonics, 2016</a>.</p>
+          <p>Li et al. Tutorial on intraclass correlation coefficients for fNIRS-based brain imaging. <a href="https://doi.org/10.1117/1.jbo.20.5.050801">Journal of Biomedical Optics, 2015</a>.</p>
+          <p>Lin et al. Atlas-guided volumetric diffuse optical tomography with GLM analysis. <a href="https://doi.org/10.1002/hbm.22459">Human Brain Mapping, 2014</a>.</p>
+          <p>Lin et al. Interleaved imaging of hemodynamics and blood flow in rat stroke models. <a href="https://doi.org/10.1016/j.neuroimage.2013.07.020">NeuroImage, 2014</a>.</p>
+        </div>
+      </div>
+    </article>
+  </div></section>
+</main>
 
 <footer class="footer">
   <div class="container footer-grid">
-    <div><b>Li Lab</b><p>Department of Biomedical Engineering, University of North Texas.</p><p class="small">Static website starter generated from the supplied lab materials. Replace placeholders before public launch.</p></div>
+    <div><b>Li Lab</b><p>Department of Biomedical Engineering, University of North Texas.</p><p class="small">Research in epileptogenesis, neuroengineering, photobiomodulation, electrophysiology, imaging, and computational neuroscience.</p></div>
     <div><b>Location</b><p>Discovery Park K240<br>Denton, Texas</p></div>
-    <div><b>Contact</b><p><a href="mailto:Lin.Li@unt.edu">Lin.Li@unt.edu</a></p><p><a href="https://scholar.google.com/citations?user=UkpTndkAAAAJ&hl=en">Google Scholar</a></p></div>
+    <div><b>Contact</b><p><a href="mailto:Lin.Li@unt.edu">Lin.Li@unt.edu</a></p><p><a href="publications.html">Publications</a></p></div>
   </div>
 </footer>
 <script src="assets/js/main.js"></script>
