@@ -16,9 +16,16 @@
     .focus-card h3{margin:6px 0 10px;font-size:20px;line-height:1.18}
     .focus-card p{color:var(--muted);margin:0 0 14px;font-size:14px}
     .focus-card a{margin-top:auto;font-weight:900}
-    .platform-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .platform-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:22px;align-items:stretch}
+    .platform-campus{background:white;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 10px 24px rgba(23,32,51,.05);min-height:520px}
+    .platform-campus img{width:100%;height:100%;object-fit:cover;display:block}
+    .platform-campus div{padding:18px 20px}
+    .platform-campus h3{font-size:20px;margin:0 0 8px}
+    .platform-campus p{font-size:14px;color:var(--muted);margin:0}
+    .platform-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .platform{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 10px 24px rgba(23,32,51,.05)}
-    .platform img{width:100%;height:178px;object-fit:cover;display:block}
+    .platform img{width:100%;height:170px;object-fit:cover;display:block;background:white}
+    .platform img.contain{object-fit:contain;padding:10px}
     .platform div{padding:16px}
     .platform h3{font-size:18px;line-height:1.2;margin:0 0 8px}
     .platform p{font-size:13px;color:var(--muted);margin:0}
@@ -27,7 +34,7 @@
     .collab h3{margin:0 0 10px;font-size:18px}
     .collab p{margin:0 0 10px;color:var(--muted);font-size:13px}
     .collab a{display:block;font-weight:800;font-size:13px;margin:7px 0}
-    @media (max-width:1020px){.hero-grid{grid-template-columns:1fr}.hero-card.overview-card{min-height:auto}.hero-card.overview-card img{min-height:520px}.focus-grid,.platform-grid,.collab-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:1020px){.hero-grid{grid-template-columns:1fr}.hero-card.overview-card{min-height:auto}.hero-card.overview-card img{min-height:520px}.platform-layout{grid-template-columns:1fr}.platform-campus{min-height:320px}.focus-grid,.platform-grid,.collab-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:560px){.focus-grid,.platform-grid,.collab-grid{grid-template-columns:1fr}.hero-card{display:none}}
   </style>
 </head>
@@ -68,17 +75,14 @@
 
 <section class="home-section" style="padding-top:20px">
   <div class="container section-title"><h2>Core platforms</h2><p>The lab integrates experimental and computational platforms that connect cellular-scale signals with brain-wide network dynamics.</p></div>
-  <div class="container platform-grid">
-    <article class="platform"><img src="assets/img/mea-system.jpg" alt="Multi-electrode array electrophysiology system"><div><h3>Electrophysiology</h3><p>MEA, local field potentials, penetrating microelectrodes, spike-ripple detection, and chronic neural recordings.</p></div></article>
-    <article class="platform"><img src="assets/img/pbm-timeline.png" alt="Photobiomodulation timeline"><div><h3>Neuromodulation</h3><p>Transcranial photobiomodulation protocols for prevention-oriented studies in epilepsy and neurodegeneration.</p></div></article>
-    <article class="platform"><img src="assets/img/laser-speckle-system.png" alt="Laser speckle neuroimaging system"><div><h3>Neuroimaging</h3><p>Laser speckle imaging, MRI/fMRI-informed analysis, hemodynamic imaging, and multimodal readouts.</p></div></article>
-    <article class="platform"><img src="assets/img/phfo-network.png" alt="Computational brain network analysis"><div><h3>Computational neuroscience</h3><p>Graph theory, automated event detection, biomarker modeling, and electrophysiology-imaging integration.</p></div></article>
-  </div>
-  <div class="container gallery" style="margin-top:16px">
-    <figure><img src="assets/img/animal-lab-1.png" alt="Preclinical laboratory setup"><figcaption>Preclinical models and animal lab platform</figcaption></figure>
-    <figure><img src="assets/img/vibratome.jpg" alt="Vibratome"><figcaption>Brain slice preparation</figcaption></figure>
-    <figure><img src="assets/img/tbi-device.jpg" alt="TBI device"><figcaption>Traumatic brain injury model</figcaption></figure>
-    <figure><img src="assets/img/lab-computer-1.jpg" alt="Computational workstation"><figcaption>Computational analysis workspace</figcaption></figure>
+  <div class="container platform-layout">
+    <article class="platform-campus"><img src="assets/img/lab-computer-1.jpg" alt="UNT Discovery Park campus and Biomedical Engineering environment"><div><h3>UNT Discovery Park</h3><p>Li Lab is based in UNT Biomedical Engineering at Discovery Park, where experimental neuroscience, engineering design, and computational analysis are integrated in a shared research environment.</p></div></article>
+    <div class="platform-grid">
+      <article class="platform"><img src="assets/img/mea-system.jpg" alt="Multi-electrode array electrophysiology system"><div><h3>Electrophysiology</h3><p>MEA, local field potentials, penetrating microelectrodes, spike-ripple detection, and chronic neural recordings.</p></div></article>
+      <article class="platform"><img class="contain" src="assets/img/neuromodulation-pbm-model.png" alt="Photobiomodulation neuromodulation model"><div><h3>Neuromodulation</h3><p>Transcranial photobiomodulation protocols for prevention-oriented studies in epilepsy and neurodegeneration.</p></div></article>
+      <article class="platform"><img class="contain" src="assets/img/laser-speckle-system.png" alt="Laser speckle neuroimaging system"><div><h3>Neuroimaging</h3><p>Laser speckle imaging, MRI/fMRI-informed analysis, hemodynamic imaging, and multimodal readouts.</p></div></article>
+      <article class="platform"><img class="contain" src="assets/img/phfo-network.png" alt="Computational brain network analysis"><div><h3>Computational neuroscience</h3><p>Graph theory, automated event detection, biomarker modeling, and electrophysiology-imaging integration.</p></div></article>
+    </div>
   </div>
 </section>
 
