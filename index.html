@@ -34,8 +34,14 @@
     .collab h3{margin:0 0 10px;font-size:18px}
     .collab p{margin:0 0 10px;color:var(--muted);font-size:13px}
     .collab a{display:block;font-weight:800;font-size:13px;margin:7px 0}
+    .sponsor-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+    .sponsor{background:white;border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:center}
+    .sponsor-mark{height:76px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-weight:950;font-size:26px;letter-spacing:.04em;color:white;background:var(--brand)}
+    .sponsor-mark.aes{background:var(--accent)}
+    .sponsor h3{margin:0 0 6px;font-size:20px}
+    .sponsor p{margin:0;color:var(--muted);font-size:14px}
     @media (max-width:1020px){.hero-grid{grid-template-columns:1fr}.hero-card.overview-card{min-height:auto}.hero-card.overview-card img{min-height:520px}.platform-layout{grid-template-columns:1fr}.platform-campus{min-height:320px}.focus-grid,.platform-grid,.collab-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:560px){.focus-grid,.platform-grid,.collab-grid{grid-template-columns:1fr}.hero-card{display:none}}
+    @media (max-width:560px){.focus-grid,.platform-grid,.collab-grid,.sponsor-grid{grid-template-columns:1fr}.sponsor{grid-template-columns:1fr}.hero-card{display:none}}
   </style>
 </head>
 <body>
@@ -87,12 +93,17 @@
 </section>
 
 <section class="home-section" style="padding-top:22px">
-  <div class="container section-title"><h2>Collaborators</h2><p>The Li Lab works with epilepsy, neurotrauma, pediatric neurology, brain organoid, synthetic biology, and optical neuroimaging collaborators across institutions.</p></div>
+  <div class="container section-title"><h2>Collaborators</h2><p>The Li Lab works with epilepsy, neurotrauma, pediatric neurology, brain organoid, synthetic biology, and shared preclinical imaging collaborators across institutions.</p></div>
   <div class="container collab-grid">
-    <article class="collab"><h3>UCLA epilepsy and neurotrauma</h3><p>Long-standing collaborations and mentorship in epilepsy biomarkers, post-traumatic epilepsy, and translational systems neuroscience.</p><a href="https://neilharrislab.dgsom.ucla.edu/">Neil Harris Lab</a><a href="https://labs.dgsom.ucla.edu/nerl/pages/">UCLA Laboratory for Epilepsy Research</a><a href="https://profiles.ucla.edu/richard.staba">Richard Staba</a><a href="https://profiles.ucla.edu/jerome.engel">Jerome Engel</a></article>
-    <article class="collab"><h3>UNT Biomedical Engineering</h3><p>Local collaborations in synthetic biology, brain organoids, neurodevelopmental models, and engineering approaches to disease mechanisms.</p><a href="https://engineering.unt.edu/bmen/">UNT Biomedical Engineering</a><a href="https://doi.org/10.1016/j.isci.2025.113027">Synthetic probiotics collaboration</a><a href="https://doi.org/10.64898/2026.03.15.711882">Brain organoid collaboration</a></article>
+    <article class="collab"><h3>UCLA epilepsy and neurotrauma</h3><p>Long-standing collaborations in epilepsy biomarkers, post-traumatic epilepsy, and translational systems neuroscience.</p><a href="https://labs.dgsom.ucla.edu/nerl/pages/">UCLA Laboratory for Epilepsy Research</a><a href="https://neilharrislab.dgsom.ucla.edu/">Neil Harris Lab</a></article>
+    <article class="collab"><h3>UNT Biomedical Engineering</h3><p>Local collaborations in synthetic biology, brain organoids, neurodevelopmental models, and engineering approaches to disease mechanisms.</p><a href="https://engineering.unt.edu/bme/">UNT Biomedical Engineering</a><a href="https://www.clementchanlab.org/">Clement Chan Lab</a><a href="https://engineering.unt.edu/bme/research/labs/bioprinting/">Moo-Yeal Lee Bioprinting Lab</a></article>
+    <article class="collab"><h3>UNT Health preclinical imaging</h3><p>Shared imaging resources support multimodal studies that connect electrophysiology, neuroimaging, and disease progression in preclinical models.</p><a href="https://experts.unthsc.edu/en/equipments/core-lab-pre-clinical-imaging/">Core Lab: Pre-clinical Imaging</a></article>
     <article class="collab"><h3>Clinical epilepsy partners</h3><p>Clinical collaborations connect lab biomarkers and neuromodulation questions with pediatric epilepsy, EEG, and translational patient-focused expertise.</p><a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49253">Joyce Y. Wu</a><a href="https://utswmed.org/doctors/charuta-joshi/">Charuta Joshi</a></article>
-    <article class="collab"><h3>Optical neuroimaging community</h3><p>Foundational training and continuing intellectual connections in fNIRS, diffuse optical tomography, and quantitative optical brain imaging.</p><a href="https://www.uta.edu/academics/faculty/profile?user=hanli">Hanli Liu</a><a href="https://doi.org/10.1002/hbm.22459">Atlas-guided DOT</a><a href="https://doi.org/10.1117/1.jbo.20.5.050801">Reliability methods</a></article>
+  </div>
+  <div class="container section-title" style="margin-top:42px"><h2>Sponsors</h2><p>Li Lab research is supported by federal and foundation funding for epilepsy, neuroengineering, and prevention-oriented neuroscience.</p></div>
+  <div class="container sponsor-grid">
+    <article class="sponsor"><div class="sponsor-mark">NIH</div><div><h3>National Institutes of Health</h3><p>Supporting biomedical research into mechanisms, biomarkers, and intervention strategies for neurological disease.</p></div></article>
+    <article class="sponsor"><div class="sponsor-mark aes">AES</div><div><h3>American Epilepsy Society</h3><p>Supporting epilepsy research, training, and translational work toward better diagnosis, treatment, and prevention.</p></div></article>
   </div>
 </section>
 </main>
