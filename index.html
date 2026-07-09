@@ -6,6 +6,11 @@
   <meta name="description" content="Li Lab at the University of North Texas develops neuroengineering approaches for epileptogenesis biomarkers, photobiomodulation, neuroimaging, electrophysiology, and computational neuroscience.">
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
+    .hero{padding:64px 0 48px}
+    .hero-grid{grid-template-columns:.92fr 1.08fr;align-items:stretch}
+    .hero-card.overview-card{display:flex;flex-direction:column;min-height:620px}
+    .hero-card.overview-card img{height:auto;min-height:520px;flex:1;object-fit:contain;background:#fff;padding:18px}
+    .hero-card.overview-card .caption{font-size:15px;line-height:1.5}
     .home-section{padding:58px 0}
     .focus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
     .focus-card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 10px 24px rgba(23,32,51,.05);display:flex;flex-direction:column;min-height:245px}
@@ -23,7 +28,7 @@
     .collab h3{margin:0 0 10px;font-size:18px}
     .collab p{margin:0 0 10px;color:var(--muted);font-size:13px}
     .collab a{display:block;font-weight:800;font-size:13px;margin:7px 0}
-    @media (max-width:1020px){.focus-grid,.platform-grid,.collab-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:1020px){.hero-grid{grid-template-columns:1fr}.hero-card.overview-card{min-height:auto}.hero-card.overview-card img{min-height:340px}.focus-grid,.platform-grid,.collab-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:560px){.focus-grid,.platform-grid,.collab-grid{grid-template-columns:1fr}.hero-card{display:none}}
   </style>
 </head>
@@ -48,7 +53,7 @@
       <div class="cta-row"><a class="btn primary" href="research.html">Explore research</a><a class="btn secondary" href="people.html">Meet the team</a></div>
       <div class="stats"><div class="stat"><b>HFOs</b><span>Electrophysiological biomarkers</span></div><div class="stat"><b>PBM</b><span>Prevention-oriented intervention</span></div><div class="stat"><b>Networks</b><span>Imaging and computation</span></div></div>
     </div>
-    <div class="hero-card"><img src="assets/img/phfo-network.png" alt="pHFO network analysis representing Li Lab research"><div class="caption">The lab studies pathological high-frequency oscillations, brain network reorganization, and multimodal biomarkers of epileptogenesis.</div></div>
+    <div class="hero-card overview-card"><img src="assets/img/li-lab-research-overview.png" alt="Li Lab research overview integrating electrophysiology, neuroimaging, photobiomodulation, and computational neuroscience"><div class="caption">A multimodal neuroengineering program linking electrophysiology, neuroimaging, photobiomodulation, and computational neuroscience to prevent epileptogenesis and cognitive decline.</div></div>
   </div>
 </section>
 
